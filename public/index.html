@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="icon" href="./Icons/favicon.ico" type="image/x-icon"/>
-    <title>open board clone </title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="./Icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>Openboard_Clone</title>
 </head>
 <body>
     <div class="options-cont">
@@ -36,19 +37,10 @@
         <input type="range" min="2" max="10" value="3" class="eraser-width">
     </div>
 
-    <div class="sticky-cont">
-        <!-- <div class="header-cont">
-            <div class="minimize"></div>
-            <div class="remove"></div>
-        </div>
-        <div class="note-cont">
-            <textarea></textarea>
-        </div> -->
-    </div>
     <canvas></canvas>
-    <script src="https://cdn.socket.io/4.7.3/socket.io.min.js" integrity="sha384-+miq58Ltmjm+SSP5g8Ok6dpMO/6R4n8xe/x1Yj0Bdb9kiEz25LTnWv/GZQTRQamg" crossorigin="anonymous"></script>
+    <script src="https://cdn.socket.io/4.2.0/socket.io.min.js" integrity="sha384-PiBR5S00EtOj2Lto9Uu81cmoyZqR57XcOna1oAuVuIEjzj0wpqDVfD0JA9eXlRsj" crossorigin="anonymous"></script>
     <script>
-        let socket = io.connect("https://livestreamboard.web.app/");
+        let socket = io.connect("https://livestreamboard.onrender.com");
     </script>
     <script src="tool.js"></script>
     <script src="canvas.js"></script>

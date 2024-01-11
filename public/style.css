@@ -1,12 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    margin:0;
-    padding :0;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.options-cont{
+.options-cont {
     height: 4rem;
     width: 3.5rem;
     background-color: #f1f2f6;
@@ -19,11 +19,9 @@ body{
     border-radius: 50%;
     font-size: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
-
-.tools-cont{
-    display: flex;/*to bring in 1 line hirizontal*/
+.tools-cont {
+    display: flex;
     height: 5rem;
     width: 55vw;
     background-color: #f1f2f6;
@@ -32,7 +30,6 @@ body{
     top: 2rem;
     left: 25vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 .scale-tools {
     animation-name: scale-tools;
@@ -46,9 +43,9 @@ body{
         transform: scale(1);
     }
 }
-.tools-cont > *{
+.tools-cont > * {
     display: block;
-    width:4rem;
+    width: 4rem;
 }
 .pencil-tool-cont {
     background-color: #f1f2f6;
@@ -106,6 +103,7 @@ body{
 .eraser-tool-cont input {
     width: 80%;
 }
+
 .sticky-cont {
     height: 15rem;
     width: 15rem;

@@ -132,12 +132,8 @@ download.addEventListener("click", (e) => {
 })
 
 
-
-
-//recieving from the server and uopdating my camvas
 socket.on("beginPath", (data) => {
     // data -> data from server
-    //update begin path by calling and passing gthis fucntionn
     beginPath(data);
 })
 socket.on("drawStroke", (data) => {
